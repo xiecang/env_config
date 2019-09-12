@@ -62,3 +62,5 @@ source ~/.zshrc
 
 - https://sourabhbajaj.com/mac-setup/iTerm/zsh.html
 - https://medium.com/@rafavinnce/iterm2-zsh-oh-my-zsh-material-design-the-most-power-full-terminal-on-macos-332b1ee364a5
+
+- [powerlevel9k config](https://github.com/Powerlevel9k/powerlevel9k/wiki/Show-Off-Your-Config)
