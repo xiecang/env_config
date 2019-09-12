@@ -58,6 +58,10 @@ POWERLEVEL9K_STATUS_ERROR_BACKGROUND="clear"
 POWERLEVEL9K_STATUS_ERROR_FOREGROUND="red"
 POWERLEVEL9K_TIME_BACKGROUND="clear"
 POWERLEVEL9K_TIME_FOREGROUND="cyan"
+POWERLEVEL9K_PYENV_FOREGROUND="cyan"
+POWERLEVEL9K_PYENV_BACKGROUND="clear"
+POWERLEVEL9K_ANACONDA_FOREGROUND="blue"
+POWERLEVEL9K_ANACONDA_BACKGROUND="clear"
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND='clear'
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND='magenta'
 POWERLEVEL9K_BACKGROUND_JOBS_BACKGROUND='clear'
@@ -189,3 +193,120 @@ zplug load
 
 # source your own shrc file if exists
 [ -f ~/.env.sh ] && source ~/.env.sh
+
+
+# adb
+if [ -d "$HOME/adb-fastboot/platform-tools" ] ; then
+ export PATH="$HOME/adb-fastboot/platform-tools:$PATH"
+fi
+
+# alias
+
+alias q='exit'
+alias quit='exit'
+
+alias ce='crontab -e '
+alias cl='crontab -l '
+alias ed='eval $(docker-machine env default)'
+alias lo='locate '
+alias loc="open http://127.0.0.1"
+alias lsn='ls | nl'
+alias mp="mitmproxy -p8888"
+alias grm='git rebase master'
+alias gdc='git diff --cached'
+alias gdm='git diff master'
+alias gs='git status -s'
+alias gmg='git commit -m'
+alias gpo='git push origin '
+alias gpom='git push origin master'
+alias grebase2='git rebase -i HEAD~~'
+alias gnew='function _new() { git checkout -b $1; git pull origin $1 }; _new'
+alias hexog='hexo g'
+alias hs='hexo s'
+alias hn='hexo n'
+alias hd='sudo hexo d'
+alias his='history'
+alias exi='exit'
+alias ctags='/usr/local/bin/ctags'
+alias mc='make clean'
+alias ja='java '
+alias jc='javac '
+alias py='python '
+alias py3s='python3.6 -m http.server'
+alias ipy='ipython'
+alias ci="vi "
+alias vim="vi"
+alias nvi="nvim "
+alias nv="nvim "
+alias cl='clang '
+alias g++='g++ -Wall '
+alias gcc='gcc -Wall '
+alias cc='cc -Wall '
+alias xo='open '
+alias o='open '
+alias psp='ps aux | grep python'
+alias rm='rmtrash '
+alias rmc='rm *.pyc; rm .cache; rm __pycache__'
+alias rmpyc='find . -name "*.pyc" -exec rm -rf {} \;'
+alias runl='python manage.py runserver'
+alias run='python manage.py runserver 0.0.0.0:8000'
+alias runs='python manage.py shell'
+alias rs='redis-server'
+
+alias runtest="when-changed -v -r -1 -s ./ ./bin/test"
+alias testcommand="when-changed -v -r -1 -s ./ ./wnntest.sh"
+
+alias tf='tail -f '
+alias prettyjson='python -m json.tool'
+alias y='youdao '
+alias t='tmux '
+alias tl='tmux ls'
+alias tat='tmux at -t'
+alias ta='tmux at -t'
+alias tn='tmux rename -t'
+alias tnew='tmux new -s '
+alias tpl='tmuxp load '
+
+alias vi="nvim"
+alias vim="nvim"
+alias tmux="tmux -2"
+alias ssh="ssh -X"
+alias s="ssh -X"
+alias md="mkdir -p"
+alias rd="rmdir"
+alias df="df -h"
+alias mv="mv -i"
+alias slink="link -s"
+alias l="ls -l"
+alias la="ls -a"
+alias ll="ls -la"
+alias lt="ls -lhtrF"
+alias l.="ls -lhtrdF .*"
+alias grep="grep --color=auto"
+alias cd..="cd .."
+alias cd...="cd ../.."
+alias cd....="cd ../../.."
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias zb="cat /dev/urandom | hexdump -C | grep --color=auto \"ca fe\""
+
+# alias for proxy
+alias proxy="export ALL_PROXY=socks5://127.0.0.1:1087"
+alias unproxy="unset ALL_PROXY"
+alias ip="curl ip.cn"
+
+
+# youbute
+alias download_youbute_mp3='youtube-dl --extract-audio --audio-format mp3 --no-playlist'
+alias download_youbute='youtube-dl -f bestvideo+bestaudio '
+alias download_youbute_mp3_proxy='youtube-dl --proxy 'socks5://127.0.0.1:1087' --extract-audio --audio-format mp3 '
+alias download_youbute_proxy='youtube-dl --proxy 'socks5://127.0.0.1:1087' -f bestvideo+bestaudio '
+
+# conda
+PATH="/Users/fengchen/miniconda3/bin:$PATH"
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
