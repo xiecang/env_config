@@ -1,0 +1,7 @@
+--ignore-dir=eggs
+--ignore-dir=node_modules/
+--ignore-dir=.idea/
+--ignore-dir=.ropeproject
+
+--type-set=ORIG=.orig
+--noORIG
