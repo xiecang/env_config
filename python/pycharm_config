@@ -1,12 +1,21 @@
+# themes
+
 http://color-themes.com/?view=index
 
 Solarized Theme 主题
 
-https://www.jianshu.com/p/b94c798481f0
-https://bbs.csdn.net/topics/391847166
 
 file -> settings -> editor -> color scheme -> general 
      code -> identifier under caret -> background   #e5e3d8
      Search Result  #CCC6B4
      Sekection background  #CCC6B4
 原 #EEE8D5 修改为 #CCC6B4
+
+
+# keymap
+Move Caret to Next Word  option + f
+Move Caret to Provious Word  option + b
+
+# refer
+- https://www.jianshu.com/p/b94c798481f0
+- https://bbs.csdn.net/topics/391847166

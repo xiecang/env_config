@@ -13,11 +13,11 @@ todo.txt
 .ropeproject/
 *.pyc
 *.pyo
+local_run.py
 
 # testfile
 run_admin.sh
-wnntest.sh
-wnnrun.sh
+xctest.sh
 run.sh
 .python-version
 .tmp
@@ -28,7 +28,6 @@ mvn_publish.sh
 # js/node
 .tern-port
 .tern-project
-t.js
 node_modules/
 
 # ag silver searcher
